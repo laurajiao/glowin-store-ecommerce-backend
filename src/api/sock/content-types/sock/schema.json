@@ -1,0 +1,96 @@
+{
+  "kind": "collectionType",
+  "collectionName": "socks",
+  "info": {
+    "singularName": "sock",
+    "pluralName": "socks",
+    "displayName": "Socks",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "Price": {
+      "type": "decimal",
+      "required": false
+    },
+    "stock": {
+      "type": "integer",
+      "required": false
+    },
+    "SKU": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "ankle",
+        "no-show",
+        "calf",
+        "crew",
+        "pack"
+      ],
+      "required": false
+    },
+    "isPack": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "discount": {
+      "type": "decimal"
+    },
+    "isTopPick": {
+      "type": "boolean"
+    },
+    "colors": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "isNew": {
+      "type": "boolean"
+    },
+    "isDiscount": {
+      "type": "boolean"
+    },
+    "isHot": {
+      "type": "boolean"
+    },
+    "isLargeDisplay": {
+      "type": "boolean"
+    },
+    "isThick": {
+      "type": "boolean"
+    },
+    "isFunky": {
+      "type": "boolean"
+    }
+  }
+}
